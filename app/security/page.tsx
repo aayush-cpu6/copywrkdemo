@@ -1,0 +1,10 @@
+import type{Metadata}from"next";import {LegalPage} from "../legal-content";
+export const metadata:Metadata={title:"Security",description:"Copywrk's practical approach to secure delivery, data minimisation, AI safeguards, and responsible issue reporting.",alternates:{canonical:"/security"}};
+export default function Security(){return <LegalPage eyebrow="TRUST / SECURITY" title="Practical protection, honestly described." intro="Our current security approach—without claiming certifications or guarantees we do not have." blocks={[
+{title:"Secure delivery",body:"We use reputable service providers, HTTPS for public web traffic, and access controls appropriate to the systems we manage. Architecture and safeguards vary with project scope and data sensitivity."},
+{title:"Data minimisation",body:"We aim to collect and retain only what is reasonably needed for an enquiry, project, support, or legitimate records. Sensitive information should not be placed unnecessarily in forms, demos, prompts, or support messages."},
+{title:"AI safeguards",body:"For deployed AI systems we recommend restricted permissions, clear tool access, appropriate logging, human escalation, scenario testing, and human review for sensitive or consequential decisions."},
+{title:"Shared responsibility",body:"Clients should protect credentials, use multi-factor authentication where available, restrict access, maintain connected accounts, obtain required consent, and report suspicious activity promptly."},
+{title:"No absolute guarantee",body:"No website, automation, or connected service can be guaranteed completely secure or continuously available. We work to reduce reasonable risks and respond responsibly when an issue is reported."},
+{title:"Report an issue",body:"Email copywrk0@gmail.com with the affected URL, reproduction steps, and likely impact. Do not access other people’s data, disrupt services, run destructive testing, or publish details before we have had a reasonable opportunity to investigate."}
+]}/>}

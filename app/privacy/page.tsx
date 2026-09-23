@@ -1,0 +1,11 @@
+import type{Metadata}from"next";import {LegalPage} from "../legal-content";
+export const metadata:Metadata={title:"Privacy Policy",description:"How Copywrk collects, uses, shares, and protects information provided through its website and services.",alternates:{canonical:"/privacy"}};
+export default function Privacy(){return <LegalPage eyebrow="LEGAL / PRIVACY" title="Privacy, without the fog." intro="What Copywrk collects, why we use it, whom we may share it with, and the choices available to you." blocks={[
+{title:"Who we are",body:"Copywrk is an independent digital services studio. We build websites, AI receptionists, follow-up systems, and workflow automations."},
+{title:"Information we collect",body:"We collect information you provide, such as your name, company, email, phone number, industry, project requirements, and messages. Hosting providers may process basic device, browser, IP-address, page, and timestamp data for reliability and security."},
+{title:"How we use it",body:"We use information to respond to enquiries, prepare proposals, deliver requested work, provide support, secure and improve our systems, maintain legitimate records, and comply with applicable obligations. We do not sell personal information."},
+{title:"Forms and demos",body:"Our contact form prepares an email on your device; it is not saved to a Copywrk database by this website. The browser-based AI demo is not intentionally retained. Do not enter confidential, medical, financial, or otherwise sensitive information in a demonstration."},
+{title:"Providers and sharing",body:"We may use providers for hosting, communications, forms, telephony, AI models, databases, or project delivery. Information is shared only as reasonably needed for their role, when required by law, or to protect rights and safety."},
+{title:"Retention, security, and rights",body:"We retain information only as reasonably necessary for its purpose, client records, or legal requirements. You may request access, correction, deletion, consent withdrawal, or grievance handling by emailing us. We may verify your identity before acting."},
+{title:"Children and updates",body:"Our services are intended for businesses and adults. We do not knowingly collect children’s data through this website. We may update this policy as our services or obligations change."}
+]}/>}

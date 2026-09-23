@@ -1,0 +1,62 @@
+/* Keep the receptionist demo above every transformed animation layer. */
+body .demo-shell {
+  z-index: 10000;
+  isolation: isolate;
+}
+
+.demo-shell .demo-panel {
+  max-height: calc(100dvh - 36px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+}
+
+.demo-shell .demo-backdrop,
+.demo-shell button {
+  touch-action: manipulation;
+}
+
+.demo-shell .demo-choices button {
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(255, 89, 61, 0.2);
+}
+
+.dot-grid {
+  pointer-events: none;
+}
+
+@media (max-width: 900px) {
+  body .demo-shell {
+    align-items: center;
+    padding: 12px;
+  }
+
+  .demo-shell .demo-panel {
+    width: 100%;
+    min-height: 0;
+    max-height: calc(100dvh - 24px);
+    padding: 18px;
+    box-shadow: 7px 8px 0 var(--ink);
+  }
+
+  .demo-shell .demo-head strong {
+    font-size: 20px;
+    line-height: 1.1;
+  }
+
+  .demo-shell .demo-panel > p {
+    margin: 25px 0;
+  }
+
+  .demo-shell .demo-choices {
+    gap: 10px;
+  }
+
+  .demo-shell .demo-choices button {
+    min-height: 88px;
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,58 @@
+export const systemData = {
+  "lead-conversion": {
+    number: "01",
+    eyebrow: "WEBSITE LEAD SYSTEM",
+    title: "Turn a form submission into a prepared conversation.",
+    description: "A connected lead-conversion system that captures enquiries, responds quickly, qualifies intent, books the next step, and gives your team a clean handoff.",
+    accent: "coral",
+    outcome: "Every serious website enquiry gets a useful next step instead of disappearing into an inbox.",
+    trigger: "A visitor submits a form, requests an appointment, taps a campaign link, or becomes a new ad lead.",
+    stages: [
+      ["Capture", "Record the original source and the details the prospect has already provided."],
+      ["Respond", "Acknowledge the enquiry quickly through an approved channel and set a clear expectation."],
+      ["Qualify", "Ask a short set of business-specific questions about need, timing, location, budget, or fit."],
+      ["Convert", "Offer a booking step or route a structured summary to the correct human owner."],
+    ],
+    stack: ["Website forms", "WhatsApp", "Email", "Google Calendar", "Google Sheets or CRM", "n8n"],
+    boundaries: "Follow-up timing, consent, business hours, opt-outs, exceptions, and human ownership are defined before launch. The system supports the team; it does not invent promises or make unapproved decisions.",
+    related: { href: "/system/ai-receptionist", label: "Explore the incoming-call system" },
+  },
+  "ai-receptionist": {
+    number: "02",
+    eyebrow: "INCOMING CALL SYSTEM",
+    title: "Answer, understand, and route every approved call type.",
+    description: "An AI receptionist system for routine inbound enquiries, qualification, appointment coordination, summaries, and clearly defined human handoffs.",
+    accent: "violet",
+    outcome: "Callers receive a consistent response while your team receives the context required to act.",
+    trigger: "A customer calls while staff are busy, unavailable, or outside normal opening hours.",
+    stages: [
+      ["Answer", "Open with an approved greeting and identify what the caller needs."],
+      ["Understand", "Collect only the information required for the supported call type."],
+      ["Coordinate", "Check an approved calendar, offer the correct next step, or arrange a callback."],
+      ["Handoff", "Send the team a concise summary and escalate sensitive or unusual situations."],
+    ],
+    stack: ["Vapi", "Twilio", "Google Calendar", "WhatsApp", "Google Sheets or CRM", "n8n"],
+    boundaries: "The receptionist is limited to approved administrative conversations. Urgent, sensitive, medical, legal, financial, uncertain, or explicitly requested situations are handed to a person using predefined rules.",
+    related: { href: "/system/workflow-automation", label: "Explore the workflow system" },
+  },
+  "workflow-automation": {
+    number: "03",
+    eyebrow: "OPERATIONS SYSTEM",
+    title: "Connect repetitive work without creating a fragile maze.",
+    description: "Focused workflow automation that moves information between the tools your team already uses and keeps ownership visible.",
+    accent: "lime",
+    outcome: "Routine actions happen consistently, exceptions stay visible, and people retain control of consequential decisions.",
+    trigger: "A lead changes status, an appointment is booked, a form arrives, a task becomes due, or another reliable business event occurs.",
+    stages: [
+      ["Trigger", "Start from a clear event produced by an existing business tool."],
+      ["Validate", "Check that required information exists and route incomplete or exceptional cases safely."],
+      ["Act", "Create the approved record, notification, task, message, or calendar action."],
+      ["Track", "Log the result and make failures or human follow-up obvious to the owner."],
+    ],
+    stack: ["n8n", "Google Workspace", "WhatsApp", "Email", "Calendars", "CRMs and spreadsheets"],
+    boundaries: "We begin with one high-value workflow, define failure behaviour and ownership, and keep human approval wherever the action is sensitive, expensive, irreversible, or regulated.",
+    related: { href: "/system/lead-conversion", label: "Explore the website-lead system" },
+  },
+} as const;
+
+export type SystemKey = keyof typeof systemData;

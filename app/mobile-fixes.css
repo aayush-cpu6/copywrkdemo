@@ -1,0 +1,495 @@
+@media (max-width: 900px) {
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: clip;
+  }
+
+  header.topbar {
+    grid-template-columns: minmax(0, 1fr) auto auto;
+    gap: 8px;
+    padding-inline: 14px;
+  }
+
+  header.topbar .brand {
+    min-width: 0;
+    gap: 8px;
+  }
+
+  header.topbar .brand-name {
+    font-size: 19px;
+  }
+
+  header.topbar .brand-orbit {
+    width: 32px;
+    height: 32px;
+    flex: 0 0 32px;
+  }
+
+  header.topbar .nav-cta {
+    margin-right: 0;
+    padding: 9px 11px;
+    white-space: nowrap;
+    font-size: 9px;
+  }
+
+  header.topbar .menu {
+    width: 34px;
+    height: 34px;
+    padding: 9px;
+  }
+
+  section.hero {
+    min-height: 0;
+    padding: 18px 14px 0;
+  }
+
+  .hero .hero-kicker {
+    gap: 12px;
+    font-size: 9px;
+    line-height: 1.35;
+    letter-spacing: .09em;
+  }
+
+  .hero .hero-kicker span:last-child {
+    text-align: right;
+  }
+
+  .hero .hero-grid {
+    min-height: 0;
+  }
+
+  .hero .hero-copy {
+    min-width: 0;
+    padding: 28px 0 45px;
+  }
+
+  .hero .hero-copy h1 {
+    width: 100%;
+    line-height: .82;
+    letter-spacing: -.075em;
+  }
+
+  .hero .hero-copy h1 span:nth-child(1),
+  .hero .hero-copy h1 span:nth-child(3) {
+    font-size: clamp(54px, 17.2vw, 82px);
+  }
+
+  .hero .hero-copy h1 span:nth-child(2) {
+    width: max-content;
+    max-width: 100%;
+    padding: 0;
+    color: #bd321f;
+    background: transparent;
+    font-size: clamp(48px, 15.5vw, 74px);
+    font-weight: 900;
+    letter-spacing: -.075em;
+    -webkit-text-stroke: 0;
+  }
+
+  .hero .hero-bottom {
+    width: 100%;
+    gap: 30px;
+    margin-top: 52px;
+  }
+
+  .hero-bottom .typed-intro {
+    width: calc(100% - 7px);
+    min-height: 0;
+    padding: 17px 16px 18px 18px;
+    border-left-width: 6px;
+    box-shadow: 6px 7px 0 var(--ink);
+    font-size: 16px;
+    line-height: 1.35;
+  }
+
+  .hero-bottom .typed-intro.is-complete {
+    box-shadow: 6px 7px 0 var(--ink);
+  }
+
+  .hero-bottom .typed-intro .typing-live {
+    top: 17px;
+    right: 16px;
+    left: 18px;
+  }
+
+  .hero .hero-actions {
+    width: 100%;
+    gap: 24px;
+  }
+
+  .hero .hero-actions > a,
+  .hero .demo-open {
+    width: max-content;
+    max-width: 100%;
+    font-size: 11px;
+  }
+
+  .hero .dot-stage {
+    min-height: 300px;
+    margin-top: 0;
+  }
+
+  .section-head .typed-service-copy {
+    width: calc(100% - 7px);
+    min-height: 0;
+    margin-top: 34px;
+    box-shadow: 6px 7px 0 var(--ink);
+  }
+}
+
+@media (max-width: 380px) {
+  header.topbar .brand-name {
+    font-size: 17px;
+  }
+
+  header.topbar .nav-cta {
+    padding-inline: 9px;
+    font-size: 8.5px;
+  }
+
+  .hero .hero-copy h1 span:nth-child(1),
+  .hero .hero-copy h1 span:nth-child(3) {
+    font-size: 16.6vw;
+  }
+
+  .hero .hero-copy h1 span:nth-child(2) {
+    font-size: 15vw;
+  }
+}
+
+/* Some Android browsers report a ~980px layout viewport. Pointer detection
+   keeps these adjustments phone-only without changing laptop layouts. */
+@media (max-width: 1100px) and (hover: none) and (pointer: coarse) {
+  section.hero {
+    min-height: 0;
+  }
+
+  .hero .hero-grid {
+    min-height: 0;
+    grid-template-columns: 1fr;
+  }
+
+  .hero .hero-copy {
+    min-height: 0;
+    padding-bottom: 38px;
+    border-right: 0;
+  }
+
+  .hero .hero-bottom {
+    margin-top: 42px;
+  }
+
+  .hero .dot-stage {
+    min-height: 220px;
+    margin-top: 0;
+    border-top: 1px solid var(--line);
+  }
+
+  .hero .dot-grid {
+    inset: 15% 7% 22%;
+  }
+
+  .hero .stage-label {
+    bottom: 14px;
+  }
+
+  /* Android browsers can expose a ~980px layout viewport even on phones.
+     Keep the SEO/service directory truly single-column in that case so the
+     desktop three-column composition cannot create a large empty gap. */
+  .seo-intro {
+    display: block;
+  }
+
+  .seo-intro-copy {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .seo-intro-copy > span,
+  .seo-intro-copy > h2,
+  .seo-intro-copy > div {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .seo-intro-copy > h2 {
+    margin-top: 32px;
+  }
+
+  .seo-intro-copy > div {
+    margin-top: 30px;
+  }
+
+  .seo-paths {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 45px;
+  }
+
+  .seo-paths a {
+    min-height: 118px;
+    padding: 18px;
+  }
+
+  .seo-paths strong {
+    font-size: clamp(23px, 7vw, 38px);
+  }
+}
+
+/* Final mobile layout hardening. */
+@media (max-width: 900px) {
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  main {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: clip;
+  }
+
+  section.hero {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .hero .hero-grid,
+  .hero .hero-copy {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .hero .hero-copy h1 {
+    width: 100%;
+    max-width: 100%;
+    overflow: visible;
+    font-size: 15.5vw;
+  }
+
+  .hero .hero-copy h1 span {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    white-space: normal;
+    overflow-wrap: normal;
+    word-break: normal;
+  }
+
+  .hero .hero-copy h1 span:nth-child(1) {
+    font-size: clamp(50px, 16vw, 68px);
+    letter-spacing: -.075em;
+  }
+
+  .hero .hero-copy h1 span:nth-child(2) {
+    width: 100%;
+    max-width: 100%;
+    font-size: clamp(40px, 12.8vw, 58px);
+    letter-spacing: -.075em;
+    white-space: nowrap;
+  }
+
+  .hero .hero-copy h1 span:nth-child(3) {
+    font-size: clamp(43px, 13.2vw, 60px);
+    letter-spacing: -.075em;
+  }
+
+  .hero .hero-copy h1 i {
+    display: inline;
+  }
+
+  .seo-intro {
+    width: 100%;
+    max-width: 100%;
+    min-height: 0;
+    padding: 72px 16px;
+    overflow: hidden;
+  }
+
+  .seo-intro-copy,
+  .seo-intro-copy[data-reveal] {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    min-height: 0;
+    height: auto;
+    opacity: 1;
+    transform: none;
+  }
+
+  .seo-intro-copy > span,
+  .seo-intro-copy > h2,
+  .seo-intro-copy > div {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .seo-intro-copy > h2 {
+    margin: 28px 0 0;
+    font-size: clamp(43px, 13.5vw, 64px);
+    line-height: .9;
+    letter-spacing: -.07em;
+  }
+
+  .seo-intro-copy > div {
+    margin: 28px 0 0;
+    font-size: 15px;
+    line-height: 1.55;
+  }
+
+  .seo-intro-copy > div p {
+    margin: 0 0 18px;
+  }
+
+  .seo-paths {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 42px;
+    grid-template-columns: 1fr;
+  }
+
+  .seo-paths[data-reveal] {
+    opacity: 1;
+    transform: none;
+  }
+
+  .seo-paths a {
+    width: 100%;
+    min-width: 0;
+    min-height: 118px;
+    grid-template-columns: 32px minmax(0, 1fr) 24px;
+    gap: 12px;
+    padding: 18px 14px;
+  }
+
+  .seo-paths strong {
+    min-width: 0;
+    font-size: clamp(24px, 7.2vw, 36px);
+    overflow-wrap: break-word;
+  }
+}
+
+@media (max-width: 380px) {
+  .hero .hero-copy h1 span:nth-child(1) {
+    font-size: 15.7vw;
+  }
+
+  .hero .hero-copy h1 span:nth-child(2) {
+    font-size: 12.2vw;
+  }
+
+  .hero .hero-copy h1 span:nth-child(3) {
+    font-size: 12.8vw;
+  }
+
+  .seo-intro-copy > h2 {
+    font-size: 13vw;
+  }
+}
+
+/* Cw identity: keep the handwritten feel, but tune it to Copywrk's cream/ink/coral system. */
+.brand-mark {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 38px;
+  flex: 0 0 44px;
+  color: var(--ink);
+}
+.brand-mark > span {
+  font-family: "Segoe Script", "Brush Script MT", "Snell Roundhand", cursive;
+  font-size: 31px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -0.12em;
+  transform: rotate(-5deg) translateY(-1px);
+}
+.brand-mark > i {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  right: 2px;
+  bottom: 3px;
+  border-radius: 50%;
+  background: var(--coral);
+}
+.brand-name {
+  font-size: 21px;
+  font-weight: 800;
+  letter-spacing: -0.055em;
+}
+
+/* Mobile audit fixes: only the floating WhatsApp button becomes icon-only.
+   The previous generic wa.me selector also constrained header and in-page CTAs. */
+@media (max-width: 900px) {
+  header.topbar .brand-mark {
+    width: 39px;
+    height: 34px;
+    flex-basis: 39px;
+  }
+  header.topbar .brand-mark > span {
+    font-size: 27px;
+  }
+  header.topbar .brand-name {
+    font-size: 18px;
+  }
+
+  .whatsapp-cta {
+    width: 52px;
+    height: 52px;
+    min-width: 52px;
+    max-width: 52px;
+    min-height: 52px;
+    max-height: 52px;
+    right: max(12px, env(safe-area-inset-right));
+    bottom: max(12px, env(safe-area-inset-bottom));
+    padding: 0;
+    display: grid;
+    place-items: center;
+    gap: 0;
+    border-radius: 50%;
+  }
+  .whatsapp-cta svg {
+    width: 25px;
+    height: 25px;
+  }
+  .whatsapp-cta span {
+    display: none;
+  }
+
+  header.topbar .nav-cta,
+  .hero a[href*="wa.me"],
+  .contact a[href*="wa.me"],
+  footer a[href*="wa.me"] {
+    max-width: none;
+    max-height: none;
+  }
+
+  footer {
+    padding-bottom: 88px;
+  }
+}
+
+@media (max-width: 520px) {
+  header.topbar {
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
+  header.topbar .nav-cta {
+    display: none;
+  }
+  header.topbar .brand-name {
+    font-size: 17px;
+  }
+  .hero .hero-kicker {
+    align-items: flex-start;
+  }
+}

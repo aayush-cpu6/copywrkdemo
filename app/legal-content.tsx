@@ -1,0 +1,3 @@
+import {SiteHeader,SiteFooter} from "./site-chrome";
+type Block={title:string;body:string};
+export function LegalPage({eyebrow,title,intro,blocks}:{eyebrow:string;title:string;intro:string;blocks:Block[]}){return <main><SiteHeader/><section className="legal-hero"><span>{eyebrow}</span><h1>{title}</h1><p>{intro}</p><small>Effective 22 July 2026 · Last updated 22 July 2026</small></section><section className="legal-body">{blocks.map((b,i)=><article key={b.title}><span>{String(i+1).padStart(2,"0")}</span><div><h2>{b.title}</h2><p>{b.body}</p></div></article>)}<aside>Questions or requests? Email <a href="mailto:copywrk0@gmail.com">copywrk0@gmail.com</a>.</aside></section><SiteFooter/></main>}

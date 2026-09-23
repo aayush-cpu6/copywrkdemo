@@ -1,0 +1,11 @@
+"use client";
+import { useState } from "react";
+import Link from "next/link";
+
+export const whatsappUrl = "https://wa.me/919711170297?text=Hi%20Aayush%2C%20I%20found%20Copywrk%20through%20your%20website%20and%20would%20like%20to%20discuss%20a%20website%20project.";
+
+function BrandMark(){return <span className="brand-mark" aria-hidden="true"><span>Cw</span><i/></span>}
+export function Brand(){return <Link className="brand" href="/" aria-label="Copywrk home"><BrandMark/><span className="brand-name">copywrk</span></Link>}
+export function SiteHeader(){const[open,setOpen]=useState(false);return <header className="topbar"><Brand/><nav className={open?"nav open":"nav"}><Link href="/services" onClick={()=>setOpen(false)}>Services</Link><Link href="/work" onClick={()=>setOpen(false)}>Proof</Link><Link href="/about" onClick={()=>setOpen(false)}>About</Link></nav><a className="nav-cta" href={whatsappUrl} target="_blank" rel="noopener noreferrer">WhatsApp <span>↗</span></a><button className="menu" onClick={()=>setOpen(!open)} aria-expanded={open} aria-label="Toggle navigation"><i/><i/></button></header>}
+export function SiteFooter(){return <footer><div className="brand footer-brand" aria-label="Copywrk"><BrandMark/><span className="brand-name">copywrk</span></div><p>Premium websites for service businesses, built to make the first impression count.</p><div><a href="https://www.instagram.com/copywrk/" target="_blank" rel="me noopener noreferrer" aria-label="Copywrk on Instagram">Instagram ↗</a><Link href="/privacy">Privacy</Link><Link href="/terms">Terms</Link><Link href="/security">Security</Link><span>© 2026</span></div></footer>}
+export function WhatsAppCta(){return <a className="whatsapp-cta" href={whatsappUrl} target="_blank" rel="noopener noreferrer" aria-label="Chat with Aayush on WhatsApp"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16.1 3.2A12.6 12.6 0 0 0 5.4 22.5L3.7 28.8l6.5-1.7a12.6 12.6 0 1 0 5.9-23.9Zm0 22.9c-2 0-3.9-.6-5.5-1.6l-.4-.2-3.8 1 1-3.7-.3-.4A10.3 10.3 0 1 1 16 26Zm5.7-7.7c-.3-.2-1.8-.9-2.1-1-.3-.1-.5-.2-.7.2l-1 1.2c-.2.3-.4.3-.7.1-2-.9-3.3-1.7-4.6-4-.3-.5.3-.5.9-1.7.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.6-.5-.8-.5h-.7c-.2 0-.6.1-.9.4-.3.3-1.2 1.2-1.2 2.9s1.2 3.3 1.4 3.6c.2.2 2.5 3.8 6 5.3.8.4 1.5.6 2 .7.8.3 1.6.2 2.2.1.7-.1 1.8-.7 2.1-1.5.3-.7.3-1.3.2-1.5-.2-.3-.5-.4-.9-.6Z"/></svg><span>Chat on WhatsApp</span></a>}

@@ -1,0 +1,32 @@
+# Copywrk
+
+> Copywrk is an independent digital studio building conversion-focused websites and practical AI automation for growing businesses.
+
+## Core services
+
+- [Website design and development](https://copywrk.vercel.app/services/websites)
+- [AI receptionist systems](https://copywrk.vercel.app/services/receptionist)
+- [Lead follow-up automation](https://copywrk.vercel.app/services/followup)
+- [Workflow automation](https://copywrk.vercel.app/services/automation)
+
+## Connected systems
+
+- [System overview](https://copywrk.vercel.app/system)
+- [Lead conversion system](https://copywrk.vercel.app/system/lead-conversion)
+- [AI receptionist system](https://copywrk.vercel.app/system/ai-receptionist)
+- [Workflow automation system](https://copywrk.vercel.app/system/workflow-automation)
+
+## Focused solutions
+
+- [Website development](https://copywrk.vercel.app/website-development)
+- [AI automation for clinics](https://copywrk.vercel.app/ai-automation-for-clinics)
+- [Physiotherapy clinic websites](https://copywrk.vercel.app/physiotherapy-clinic-websites)
+- [Lead follow-up automation solution](https://copywrk.vercel.app/lead-follow-up-automation)
+
+## Company
+
+- [About Copywrk](https://copywrk.vercel.app/about)
+- [Start a project](https://copywrk.vercel.app/contact)
+- [Copywrk on Instagram](https://www.instagram.com/copywrk/)
+
+Copywrk works remotely with businesses in India and worldwide. For enquiries, [email Copywrk](mailto:copywrk0@gmail.com).
