@@ -1,33 +1,25 @@
-# Copywrk website
+# Copywrk — ERA-inspired redesign prototype
 
-Anime.js-inspired Copywrk website built with Next.js, React, TypeScript, and Tailwind CSS.
+An original Copywrk concept that borrows ERA Residence's editorial pacing and interaction grammar without copying its branding, assets, or page content.
 
-## Local development
+## Direction
+- oversized editorial typography
+- black / warm ivory / oxblood palette
+- project chapters instead of portfolio cards
+- pinned image reveals
+- desktop horizontal capability sequence
+- DESIGN ↔ BUILD global state change
+- GSAP + ScrollTrigger + Lenis motion
+- mobile-first fallback for the horizontal section
+- proper metadata / indexable robots config
 
+## Run
 ```bash
 npm install
 npm run dev
 ```
 
-## Vercel
+Then open http://localhost:3000.
 
-Import the repository into Vercel using the Next.js preset. No output directory or custom build command is required.
-
-## Google Search Console
-
-The site publishes `robots.txt`, `sitemap.xml`, canonical URLs, page-specific metadata, and structured business data automatically.
-
-The verified Search Console HTML file is kept in `public/`. Do not remove it. The sitemap is available at `https://copywrk.vercel.app/sitemap.xml` and should be resubmitted after major route changes.
-
-## Search landing pages
-
-- `/ai-automation-for-clinics`
-- `/physiotherapy-clinic-websites`
-- `/lead-follow-up-automation`
-- `/website-development`
-- `/system`
-- `/system/lead-conversion`
-- `/system/ai-receptionist`
-- `/system/workflow-automation`
-
-Each page targets a distinct buyer need and links to the relevant service pages. Keep the copy accurate and update examples when real client work becomes available.
+## Notes
+The images in `/public/images` come from the user's existing Copywrk/Manan visual assets. Replace the repeated portfolio contact-sheet image with final Ever After / Trinity full-page screenshots when those assets are ready.
